@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Presentación</title>
+    <style>
+        /* Estilos generales para centrar todo */
+        body, html {
+            margin: 50;
+            padding: 3%;
+            height: 100;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display:block;
+            justify-content: center;
+            align-items: center;
+            /* Fondo degradado similar a la imagen */
+            background: radial-gradient(circle at top left, #251c77, #110924);
+            color: white;
+            text-align: center;
+            overflow:hidden;
+            background-image: url(FONDOWEB.jpg);
+            image-orientation:from-image;
+            border-image: none ;
+        }
+
+        /* Contenedor principal */
+        .container {
+            z-index: 1; 
+            color: ;
+        }
+
+        /* Estilo para el nombre (Título) */
+        h1 {
+            font-size: 4cm;
+            margin: 20;
+            font-weight: 600;
+            letter-spacing: 15px;
+            line-height: 1;
+        }
+
+        /* Estilo para la profesión (Subtítulo) */
+        p {
+            font-size: 1.2rem;
+            color: #b0a0d1; /* Un color lila suave */
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+        /* Estilo del Botón */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: 1px solid white; /* Borde delgado como en la imagen */
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        /* Efecto al pasar el mouse por el botón */
+        .btn:hover {
+            background-color: white;
+            color: #110924;
+        }
+
+        /* Decoración de fondo (Opcional: manchas de color) */
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            filter: blur(80px);
+            opacity: 0.2;
+            border-radius: 50%;
+            z-index: 0;
+        }
+        .blob-1 { top: -50px; left: -50px; }
+        .blob-2 { bottom: -50px; right: -50px; }
+    </style>
+</head>
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container">
+        <h1>ALAN<br>GASPAR</h1>
+        
+        <p>Lider de marketing | Diseñador Web</p>
+
+        <a href="https://tusitio.com" class="btn">VISITAR WEB</a>
+    </div>
+
+</body>
+</html>
